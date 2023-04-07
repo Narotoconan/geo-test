@@ -7,6 +7,7 @@ import time
 
 driver = Driver([
     '--headless',
+    '--no-sandbox',
     '--disable-gpu'
 ])
 base = Base(driver)
