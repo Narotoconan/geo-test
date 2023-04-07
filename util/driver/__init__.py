@@ -6,7 +6,9 @@ from selenium.common import exceptions
 import time
 
 driver = Driver([
-    '--headless'
+    '--headless',
+    '--no-sandbox',
+    '--disable-gpu'
 ])
 base = Base(driver)
 actions = ActionChains(driver)
