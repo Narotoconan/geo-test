@@ -13,7 +13,7 @@ def login_geoserver():
     page_login.click_login()
 
     try:
-        page_login.click_login()
+        page_login.check_login()
     except AssertionError:
         pytest.exit("登录失败！")
 

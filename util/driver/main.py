@@ -14,7 +14,7 @@ class Driver:
     def get_driver(self):
         if self.__driver is None:
             self.__driver = webdriver.Chrome(options=self.__chrome_options)
-            self.__driver.set_window_size(1920, 1080)
+            # self.__driver.set_window_size(1920, 1080)
             # self.__driver.maximize_window()
 
         return self.__driver

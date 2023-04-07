@@ -10,10 +10,8 @@ class PageLogin:
         self.username = By.ID, 'username'
         self.password = By.ID, 'password'
 
-        # self.submit = By.XPATH, '//*[contains(text(), "登录")]'
-        self.submit = By.XPATH, '/html/body/div[1]/div/div/span[1]/form/button'
-        # self.home = By.XPATH, '//*[contains(text(), "登录身份")]'
-        self.home = By.XPATH, '/html/body/div[1]/div/div/span[2]'
+        self.submit = By.XPATH, '//*[contains(text(), "登录")]'
+        self.home = By.XPATH, '//*[contains(text(), "登录身份")]'
 
     def open_login(self):
         base.base_page(self.page)
