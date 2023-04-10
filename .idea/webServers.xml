@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="30caedac-a104-4f67-8586-3ff544bbe4e4" name="ginger-geo">
+        <fileTransfer accessType="SFTP" host="139.196.232.208" port="22" sshConfigId="4786f7b1-8468-408e-8075-4bdec0efbcf3" sshConfig="root@139.196.232.208:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

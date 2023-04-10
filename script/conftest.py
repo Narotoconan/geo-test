@@ -7,6 +7,9 @@ page_login = PageLogin()
 @pytest.fixture(scope='session', autouse=True)
 def login_geoserver():
     page_login.open_login()
+
+    page_login.select_language()
+
     page_login.input_username("admin")
     page_login.input_password("goPOLrxluneiwxgQHxU9rL61Nh8zdOen")
 
