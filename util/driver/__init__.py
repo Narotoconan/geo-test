@@ -10,6 +10,7 @@ driver = Driver([
     '--no-sandbox',
     '--disable-gpu'
 ])
+
 base = Base(driver)
 actions = ActionChains(driver)
 

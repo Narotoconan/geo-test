@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from util.driver import base, EC
+from util.driver import base, EC, sleep
 
 
 class PageLogin:
@@ -7,7 +7,7 @@ class PageLogin:
         # self.page = "https://geoserver-sit.starlinkware.com/geoserver/web/"
         self.page = "/geoserver/web/"
 
-        self.locale_switcher = By.CLASS_NAME, 'locale_switcher'
+        self.locale_switcher = By.XPATH, '//select[@name="localeSwitcher"]'
         self.username = By.ID, 'username'
         self.password = By.ID, 'password'
 
@@ -19,6 +19,7 @@ class PageLogin:
 
     def select_language(self, lan='zh'):
         base.base_select(self.locale_switcher, text=lan)
+        sleep(1)
 
     def input_username(self, username):
         base.base_input(self.username, username)
